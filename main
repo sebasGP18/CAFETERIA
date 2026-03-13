@@ -1,0 +1,197 @@
+from cafeteria import *
+
+print("\nCLIENTES")
+c1 = Cliente(1, "Ana Pérez", "ana@mail.com")
+c2 = Cliente(2, "Carlos López", "carlos@mail.com")
+c3 = Cliente(3, "María García", "maria@mail.com")
+c4 = Cliente(4, "Juan Rodríguez", "juan@mail.com")
+c5 = Cliente(5, "Laura Sánchez", "laura@mail.com")
+c6 = Cliente(6, "Pedro Martínez", "pedro@mail.com")
+c7 = Cliente(7, "Sofía González", "sofia@mail.com")
+c8 = Cliente(8, "Diego Fernández", "diego@mail.com")
+c9 = Cliente(9, "Valentina Ruiz", "vale@mail.com")
+c10 = Cliente(10, "Andrés Torres", "andres@mail.com")
+
+c1.puntos = 15
+c2.puntos = 30
+c3.puntos = 45
+c4.puntos = 60
+c5.puntos = 75
+c6.puntos = 90
+c7.puntos = 105
+c8.puntos = 120
+c9.puntos = 135
+c10.puntos = 150
+
+print("Cliente 1: " + c1.nombre + " - Puntos: " + str(c1.puntos))
+print("Cliente 2: " + c2.nombre + " - Puntos: " + str(c2.puntos))
+print("Cliente 3: " + c3.nombre + " - Puntos: " + str(c3.puntos))
+print("Cliente 4: " + c4.nombre + " - Puntos: " + str(c4.puntos))
+print("Cliente 5: " + c5.nombre + " - Puntos: " + str(c5.puntos))
+print("Cliente 6: " + c6.nombre + " - Puntos: " + str(c6.puntos))
+print("Cliente 7: " + c7.nombre + " - Puntos: " + str(c7.puntos))
+print("Cliente 8: " + c8.nombre + " - Puntos: " + str(c8.puntos))
+print("Cliente 9: " + c9.nombre + " - Puntos: " + str(c9.puntos))
+print("Cliente 10: " + c10.nombre + " - Puntos: " + str(c10.puntos))
+
+print("\nEMPLEADOS")
+e1 = Empleado(11, "Laura", "laura@cafe.com", "E01", "BARISTA")
+e2 = Empleado(12, "Pedro", "pedro@cafe.com", "E02", "MESERO")
+e3 = Empleado(13, "Diana", "diana@cafe.com", "E03", "GERENTE")
+e4 = Empleado(14, "Carlos", "carlos@cafe.com", "E04", "BARISTA")
+e5 = Empleado(15, "Ana", "ana@cafe.com", "E05", "MESERO")
+e6 = Empleado(16, "Luis", "luis@cafe.com", "E06", "GERENTE")
+e7 = Empleado(17, "Sofía", "sofia@cafe.com", "E07", "BARISTA")
+e8 = Empleado(18, "Miguel", "miguel@cafe.com", "E08", "MESERO")
+e9 = Empleado(19, "Elena", "elena@cafe.com", "E09", "GERENTE")
+e10 = Empleado(20, "Javier", "javier@cafe.com", "E10", "BARISTA")
+
+print("Empleado 1: " + e1.nombre + " - " + e1.rol)
+print("Empleado 2: " + e2.nombre + " - " + e2.rol)
+print("Empleado 3: " + e3.nombre + " - " + e3.rol)
+print("Empleado 4: " + e4.nombre + " - " + e4.rol)
+print("Empleado 5: " + e5.nombre + " - " + e5.rol)
+print("Empleado 6: " + e6.nombre + " - " + e6.rol)
+print("Empleado 7: " + e7.nombre + " - " + e7.rol)
+print("Empleado 8: " + e8.nombre + " - " + e8.rol)
+print("Empleado 9: " + e9.nombre + " - " + e9.rol)
+print("Empleado 10: " + e10.nombre + " - " + e10.rol)
+
+print("\nBEBIDAS ")
+b1 = Bebida(101, "Café Americano", 45, "grande", "CALIENTE")
+b2 = Bebida(102, "Capuchino", 55, "mediano", "CALIENTE")
+b3 = Bebida(103, "Latte Vainilla", 62, "grande", "CALIENTE")
+b4 = Bebida(104, "Moka", 58, "mediano", "CALIENTE")
+b5 = Bebida(105, "Té Chai", 48, "grande", "CALIENTE")
+b6 = Bebida(106, "Té Verde", 42, "mediano", "CALIENTE")
+b7 = Bebida(107, "Chocolate Caliente", 60, "grande", "CALIENTE")
+b8 = Bebida(108, "Matcha Latte", 68, "mediano", "CALIENTE")
+b9 = Bebida(109, "Espresso", 35, "pequeño", "CALIENTE")
+b10 = Bebida(110, "Té Helado", 52, "grande", "FRIA")
+
+print("Bebida 1: " + b1.nombre + " - $" + str(b1.precio))
+print("Bebida 2: " + b2.nombre + " - $" + str(b2.precio))
+print("Bebida 3: " + b3.nombre + " - $" + str(b3.precio))
+print("Bebida 4: " + b4.nombre + " - $" + str(b4.precio))
+print("Bebida 5: " + b5.nombre + " - $" + str(b5.precio))
+print("Bebida 6: " + b6.nombre + " - $" + str(b6.precio))
+print("Bebida 7: " + b7.nombre + " - $" + str(b7.precio))
+print("Bebida 8: " + b8.nombre + " - $" + str(b8.precio))
+print("Bebida 9: " + b9.nombre + " - $" + str(b9.precio))
+print("Bebida 10: " + b10.nombre + " - $" + str(b10.precio))
+
+print("\nPOSTRES")
+p1 = Postre(201, "Pastel Chocolate", 75, False, False)
+p2 = Postre(202, "Cheesecake", 85, False, True)
+p3 = Postre(203, "Galleta Avena", 25, True, False)
+p4 = Postre(204, "Brownie", 55, False, False)
+p5 = Postre(205, "Muffin Arándano", 45, False, False)
+p6 = Postre(206, "Croissant", 38, False, False)
+p7 = Postre(207, "Donut", 32, False, False)
+p8 = Postre(208, "Pay Manzana", 70, True, True)
+p9 = Postre(209, "Flan", 50, False, False)
+p10 = Postre(210, "Tiramisú", 95, False, False)
+
+print("Postre 1: " + p1.nombre + " - $" + str(p1.precio))
+print("Postre 2: " + p2.nombre + " - $" + str(p2.precio))
+print("Postre 3: " + p3.nombre + " - $" + str(p3.precio))
+print("Postre 4: " + p4.nombre + " - $" + str(p4.precio))
+print("Postre 5: " + p5.nombre + " - $" + str(p5.precio))
+print("Postre 6: " + p6.nombre + " - $" + str(p6.precio))
+print("Postre 7: " + p7.nombre + " - $" + str(p7.precio))
+print("Postre 8: " + p8.nombre + " - $" + str(p8.precio))
+print("Postre 9: " + p9.nombre + " - $" + str(p9.precio))
+print("Postre 10: " + p10.nombre + " - $" + str(p10.precio))
+
+print("\nINGREDIENTES ")
+inv1 = Inventario()
+inv1.ingredientes["café"] = 30
+inv1.ingredientes["leche"] = 25
+inv1.ingredientes["azúcar"] = 40
+inv1.ingredientes["harina"] = 20
+inv1.ingredientes["huevos"] = 30
+inv1.ingredientes["mantequilla"] = 15
+inv1.ingredientes["chocolate"] = 18
+inv1.ingredientes["vainilla"] = 10
+inv1.ingredientes["canela"] = 8
+inv1.ingredientes["té"] = 12
+inv1.mostrar()
+
+input("\nPresiona Enter para continuar...")
+
+
+print("\nCLIENTE ")
+cli = Cliente(999, "Cliente ", "dcli@mail.com")
+cli.puntos = 80
+print(cli.nombre + " tiene " + str(cli.puntos) + " puntos")
+cli.usar_puntos(30)
+cli.usar_puntos(60)
+
+print("\n BEBIDA ")
+beb = Bebida(999, "Café ", 45, "grande", "CALIENTE")
+print(beb.nombre + " - $" + str(beb.precio))
+beb.agregar_extra("Leche")
+beb.agregar_extra("Canela")
+print("Precio final: $" + str(beb.precio_final()))
+
+print("\nEMPLEADO")
+emp = Empleado(888, "Empleado ", "emp@mail.com", "E1", "GERENTE")
+inv2 = Inventario()
+inv2.ingredientes["café"] = 10
+inv2.mostrar()
+emp.agregar_ingrediente(inv2, "café", 20)
+inv2.mostrar()
+
+print("\n INVENTARIO ")
+inv2.quitar("café", 5)
+inv2.quitar("café", 30)
+
+input("\nPresiona Enter para continuar...")
+
+
+cliente = Cliente(500, "Carlos88", "carlos@mail.com")
+cliente.puntos = 150
+print("\nUsuario: " + cliente.nombre + " - Puntos: " + str(cliente.puntos))
+
+cafe = Bebida(301, "Café Especial", 65, "grande", "CALIENTE")
+pastel = Postre(401, "Pastel Chocolate", 85, False, False)
+
+print("\n1. PERSONALIZACIÓN:")
+cafe.agregar_extra("Leche de almendra")
+cafe.agregar_extra("Canela extra")
+print("   Precio final: $" + str(cafe.precio_final()))
+
+print("\n2. VALIDAR STOCK:")
+inv = Inventario()
+inv.ingredientes["café"] = 10
+inv.ingredientes["leche"] = 8
+inv.ingredientes["chocolate"] = 5
+inv.ingredientes["harina"] = 6
+inv.mostrar()
+inv.quitar("café", 2)
+inv.quitar("leche", 1)
+inv.quitar("chocolate", 1)
+inv.quitar("harina", 1)
+
+print("\n3. REALIZAR PEDIDO:")
+pedido = cliente.hacer_pedido([cafe, pastel])
+print("   Total: $" + str(pedido.total))
+
+print("\n4. APLICAR DESCUENTO:")
+puntos = 30
+desc = puntos * 0.50
+print("   Canjeando " + str(puntos) + " puntos...")
+cliente.usar_puntos(puntos)
+total_final = pedido.total - desc
+print("   Total con descuento: $" + str(total_final))
+
+print("\n5. EMPLEADO PROCESA:")
+emp = Empleado(600, "Laura", "laura@cafe.com", "E45", "BARISTA")
+emp.cambiar_estado(pedido, "PREPARANDO")
+emp.cambiar_estado(pedido, "ENTREGADO")
+
+print("\n6. HISTORIAL:")
+cliente.ver_historial()
+
+print("\n7. INVENTARIO FINAL:")
+inv.mostrar()
